@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PC SHOP</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<meta name="description" content="PC Shop - Build, customize, and buy high-quality computer parts at affordable prices. CPUs, GPUs, RAM, Motherboard, Gaming peripherals, and complete PC Builds">
+	<meta name="keywords" content="PC Shop, computer parts, build your PC, GPU, CPU, RAM, SSD, Motherboard, gaming PC, Budget PC, custom PC Builder, PC components, Philippines PC Shop">
+</head>
+<body>
+
+	<!-- NavBar -->
+	<header class="navbar">
+		<div class="container">
+			<div class="logo"><i class="fa-solid fa-desktop"></i> PC SHOP</div>
+			<nav class="nav-links">
+				<a href="#home">Home</a>
+				<a href="#products">Products</a>
+				<a href="#build">Build PC</a>
+				<a href="#cart">Cart</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main-content">
+		<!-- Home Section -->
+		<section id="home" class="page-section">
+			<img src="https://i.ytimg.com/vi/WEeHmT3IXiU/maxresdefault.jpg" class="hero-image">
+			<h1>Welcome to PC Shop</h1>
+			<p>Build, customize, and upgrade your dream PC.</p>
+			<div class="cta-buttons">
+				<a href="#products" class="btn-primary">Browse Products</a>
+				<a href="#build" class="btn-secondary">Build Your PC</a>
+			</div>
+			<p class="intro-text">
+				Welcome to PC Shop, your trusted source for quality PC parts and custom builds.
+				Whether you`re upgrading, building your first PC, or choosing parts for gaming, school, or work,
+				we make everything easy and beginner-friendly. Your satisfaction and smooth experience are our priority.
+			</p>
+
+			<div class="welcome-images">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6-JIfLO2WLFFsMSHQqZWntSRtMcy6pDrnPg&s" alt="PC Build">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYsHYmuFZCXyCsgFIORNzKF4Q_BsGJyhSOg&s" alt="Gaming Setup">
+			</div>
+		</section>
+
+		<!-- Products Section -->
+		<section id="products" class="page-section">
+			<h1>Products</h1>
+			<p>Choose from thousands of high-quality PC components at the best prices.</p>
+
+			<div class="product-list">
+
+				<div class="product-card-horizontal">
+					<p>CPU</p>
+					<img src="https://ecommerce.datablitz.com.ph/cdn/shop/files/5f4s5da6f4sa_1024x.jpg?v=1760513463">
+					<div class="product-info">
+						<h3>Intel i5</h3>
+						<p class="price">₱8,500</p>
+						<p class="stock in-stock">✔ In Stock</p>
+						<button class="buy-btn" data-name="Intel i5" data-price="8500">Buy Now</button>
+					</div>
+				</div>
+
+				<div class="product-card-horizontal">
+					<p>GPU</p>
+					<img src="https://dlcdnwebimgs.asus.com/gain/233558c6-999a-4458-98d8-34eac09cb836/w800">
+					<div class="product-info">
+						<h3>NVIDIA RTX 3060 12GB</h3>
+						<p class="price">₱22,000</p>
+						<p class="stock out-stock">X Out of Stock</p>
+						<button class="buy-btn" disabled class="disabled">Unavailable</button>
+					</div>
+				</div>
+
+				<div class="product-card-horizontal">
+					<p>RAM</p>
+					<img src="https://easypc.com.ph/cdn/shop/files/Kingston_Fury_Beast_KF432C16BB2AK2_16_Black-b_2048x.jpg?v=1697441812">
+					<div class="product-info">
+						<h3>Kingston Fury Beast 16GB</h3>
+						<p class="price">₱4,500</p>
+						<p class="stock in-stock">✔ In Stock</p>
+						<button class="buy-btn" data-name="Kingston Fury 16GB" data-price="4500">Buy Now</button>
+					</div>
+				</div>
+
+				<div class="product-card-horizontal">
+					<p>Storage</p>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsB6Sg1bxhjCWCQmJf78hWkRteSrDy0MmJ4Q&s">
+					<div class="product-info">
+						<h3>Samsung 1TB NVMe SSD</h3>
+						<p class="price">₱3,800</p>
+						<p class="stock low-stock">⚠ Low Stock</p>
+						<button class="buy-btn" data-name="Samsung 1TB NVMe SSD" data-price="3800">Buy Now</button>
+					</div>
+				</div>
+
+				<div class="product-card-horizontal">
+					<p>Motherboards</p>
+					<img src="https://static.gigabyte.com/StaticFile/Image/Global/9a758fe82591d33091703d634bc90245/Product/40363/png/300" alt="Motherboard">
+					<div class="product-info">
+						<h3>Gigabyte B550 Aorus Elite AX</h3>
+						<p class="price">₱7,500</p>
+						<p class="stock in-stock">✔ In Stock</p>
+						<button class="buy-btn" data-name="Gigabyte B550 Aorus Elite AX" data-price="7500">Buy Now</button>
+					</div>
+				</div>
+
+				<!-- More product cards can be added similarly -->
+			</div>
+		</section>
+
+		<!-- Build Section -->
+		<section id="build" class="page-section">
+			<h1>Build Your PC</h1>
+			<p>Select components and see real-time compatibility.</p>
+			<div class="build-options">
+				<a href="build.html" class="btn-primary-small">Start Building Now</a>
+				<button class="btn-secondary">Load Saved Build</button>
+			</div>
+		</section>
+
+		<!-- Cart Section -->
+		<section id="cart" class="page-section">
+			<h1>Shopping Cart</h1>
+			<div class="cart-items"></div>
+			<p>Total: ₱<span class="cart-total">0</span></p>
+			<a href="#products" class="btn-primary">Start Shopping</a>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="contact-section">
+			<h2>Contact Us</h2>
+			<div class="contact-container">
+				<div class="contact-info">
+					<p><strong>Address:</strong> Porac, Pampanga</p>
+					<p><strong>Email:</strong> janyamzon7@gmail.com</p>
+					<p><strong>Phone:</strong> +63 129 109 2012</p>
+				</div>
+				<div class="map-container">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.123456789!2d120.590123!3d15.170123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33962b1234567890%3A0xabcdef1234567890!2sSinura%2C%20Porac%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1234567890123" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<p>&copy; 2025 PC Shop. All rights reserved</p>
+	</footer>
+
+	<!-- JS for Cart -->
+	<script src="script.js"></script>
+</body>
+</html>

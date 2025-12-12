@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your PC | PC Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome.css">
+</head>
+<body class="build-page-body">
+
+<header class="build-header">
+    <h1>PC Shop | Build Your PC</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="build.html">Build</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#cart">Cart</a>
+    </nav>
+</header>
+
+<div class="build-container">
+    <h2>Select Components</h2>
+
+    <div class="component-grid">
+        <!-- CPU -->
+        <div class="component-card">
+            <h3>CPU</h3>
+            <select data-part="cpu"></select>
+        </div>
+
+        <!-- Motherboard -->
+        <div class="component-card">
+            <h3>Motherboard</h3>
+            <select data-part="motherboard"></select>
+        </div>
+
+        <!-- RAM -->
+        <div class="component-card">
+            <h3>RAM</h3>
+            <select data-part="ram"></select>
+        </div>
+
+        <!-- GPU -->
+        <div class="component-card">
+            <h3>GPU</h3>
+            <select data-part="gpu"></select>
+        </div>
+
+        <!-- Storage -->
+        <div class="component-card">
+            <h3>Storage</h3>
+            <select data-part="storage"></select>
+        </div>
+
+        <!-- PSU -->
+        <div class="component-card">
+            <h3>Power Supply</h3>
+            <select data-part="psu"></select>
+        </div>
+
+        <!-- Case -->
+        <div class="component-card">
+            <h3>Case</h3>
+            <select data-part="case"></select>
+        </div>
+
+        <!-- Cooling -->
+        <div class="component-card">
+            <h3>Cooling</h3>
+            <select data-part="cooling"></select>
+        </div>
+    </div>
+
+    <div class="current-build">
+        <h2>Your Build</h2>
+        <div class="compatibility-check">Add components to check compatibility</div>
+        <div class="build-items"></div>
+        <p>Total: <span class="total-value">$0.00</span></p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 PC Shop. All Rights Reserved.
+</footer>
+
+<script src="build.js"></script>
+</body>
+</html>
